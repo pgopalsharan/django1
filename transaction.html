@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title>Product Transaction Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/">
+	</head>
+	<body>
+	<H1 align="center">New Product Entry Form!!!</H1>
+	<hr>
+        <form method="post" action="/save_trans/">
+        {% csrf_token%}
+       <table>
+        <tr><td>Product Id</td><td><input type="text" name="tProdId"></td></tr>
+        <tr><td>Quantity</td><td><input type="text" name="tQuantity"></td></tr>
+        <tr><td>Transaction Type</td><td>
+	<select name="ttype">
+		<option>Receive</option>
+		<option>Issue</option>
+	</select>
+	</td></tr>
+        <tr><td><input type="SUBMIT"></td><td><input type="RESET"></td></tr>
+
+        </table>
+        </form>
+	</body></html>

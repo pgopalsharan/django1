@@ -1,0 +1,21 @@
+<html>
+	<head>
+	<title>New Product Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/">
+	</head>
+	<body>
+	<H1 align="center">New Product Entry Form!!!</H1>
+	<hr>
+        <form method="post" action="/save_product/">
+        {% csrf_token%}
+       <table align="right">
+        <tr><td>Product Id</td><td><input type="text" name="tProdId"></td></tr>
+        <tr><td>Product Name</td><td><input type="text" name="tProdName"></td></tr>
+        <tr><td>Quantity on Hand</td><td><input type="text" name="tQOH"></td></tr>
+        <tr><td>Price</td><td><input type="text" name="tPrice"></td></tr>
+        <tr><td>Manufaturing Date</td><td><input type="text" name="tDOM"></td></tr>
+        <tr><td><input type="SUBMIT"></td><td><input type="RESET"></td></tr>
+
+        </table>
+        </form>
+	</body></html>
